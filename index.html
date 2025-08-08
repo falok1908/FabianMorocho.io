@@ -140,6 +140,50 @@
         pointer-events: none;
         z-index: -1;
       }
+      @media (max-width: 768px) {
+    body {
+      padding: 1rem;
+    }
+
+    .container {
+      padding: 1.5rem;
+    }
+
+    /* Flex inicial en columna */
+    .container > div:first-child {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    h3 {
+      font-size: 1rem;
+    }
+
+    /* Ajustar texto de contacto */
+    .contact {
+      font-size: 0.85rem;
+      line-height: 1.4;
+    }
+
+    /* Logos que se ajusten */
+    .logos, .logos1 {
+      flex-wrap: wrap;
+    }
+
+    .logos img, .logos1 img {
+      width: 32px;
+      height: 32px;
+    }
+  }
     </style>
   </head>
   
@@ -239,5 +283,6 @@
 
 </body>
 </html>
+
 
 
